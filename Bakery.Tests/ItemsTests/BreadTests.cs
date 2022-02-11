@@ -11,8 +11,22 @@ namespace Bakery.Tests
     public void BreadConstructor_CreateInstanceOfBread_Bread()
     {
       //Arrange
-      Bread loafBread = new Bread();
+      int samplePrice = 5;
+      Bread loafBread = new Bread(samplePrice);
       Assert.AreEqual(typeof(Bread), loafBread.GetType());
+    }
+
+    [TestMethod]
+    public void BreadConstructor_SetPriceProperty_5()
+    {
+      //Arrange
+      int samplePrice = 5;
+
+      //Act
+      Bread loafBread = new Bread(samplePrice);
+
+      //Assert
+      Assert.AreEqual(loafBread.Price, 5);
     }
   }
 }
