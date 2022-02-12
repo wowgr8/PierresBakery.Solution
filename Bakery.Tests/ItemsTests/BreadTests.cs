@@ -53,5 +53,15 @@ namespace Bakery.Tests
       Assert.AreEqual(loafBread.GetPrice(), 10);
     }
 
+    [TestMethod]
+    public void GetPrice_DiscountQuantityContainingAnyVariablesOfThree_15()
+    {
+      //Arrange
+      int sampleQuantity = 4;
+      //Act
+      Bread loafBread = new Bread(sampleQuantity);
+      //Assert
+      Assert.AreEqual(loafBread.GetPrice(), 15);
+    }
   }
 }
