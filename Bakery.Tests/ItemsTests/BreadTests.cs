@@ -41,6 +41,17 @@ namespace Bakery.Tests
       //Assert
       Assert.AreEqual(loafBread.GetPrice(), 5);
     }
-    
+
+    [TestMethod]
+    public void GetPrice_DiscountEveryThirdQuantity_10()
+    {
+      //Arrange
+      int sampleQuantity = 3;
+      //Act
+      Bread loafBread = new Bread(sampleQuantity);
+      //Assert
+      Assert.AreEqual(loafBread.GetPrice(), 10);
+    }
+
   }
 }
