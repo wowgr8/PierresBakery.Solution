@@ -12,7 +12,9 @@ namespace Bakery.Tests
     {
       //Arrange
       int samplePrice = 5;
+      //Act      
       Bread loafBread = new Bread(samplePrice);
+      //Assert
       Assert.AreEqual(typeof(Bread), loafBread.GetType());
     }
 
@@ -28,5 +30,17 @@ namespace Bakery.Tests
       //Assert
       Assert.AreEqual(loafBread.Price, 5);
     }
+
+    [TestMethod]
+    public void GetQuantity_GetBreadQuantity_1()
+    {
+      //Arrange
+      int samplePrice = 5;
+      //Act
+      Bread loafBread = new Bread(samplePrice);
+      //Assert
+      Assert.AreEqual(loafBread.GetQuantity(), 1);
+    }
+    
   }
 }
