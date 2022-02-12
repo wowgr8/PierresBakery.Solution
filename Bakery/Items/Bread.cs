@@ -7,14 +7,14 @@ namespace Bakery.Items
     public int Price {get; set;} //This is a field
     public int Quantity {get; set;}
 
-    public Bread(int breadPrice) // This is a constructor
+    public Bread(int breadQuantity) //This is a constructor
     {
-      Price = breadPrice;
+      Quantity = breadQuantity;
     }
 
-    public int GetQuantity() // This is a method
+    public int GetPrice() // This is a method
     {
-      return Quantity = Price / 5 ;
+      return Price = Quantity * 5 ;
     }
   }
 }
