@@ -32,7 +32,7 @@ namespace Bakery.Tests
     }
 
     [TestMethod]
-    public void GetPrice_GetBreadPrice_1()
+    public void GetPrice_GetBreadPrice_5()
     {
       //Arrange
       int sampleQuantity = 1;
