@@ -18,6 +18,8 @@ namespace Bakery.Items
       int regularPrice = 0;
       int dividedPrice = 0;
       int totalPrice = 0;
+      int remainder = 0;
+      int remainderDiscount = 0;
 
       if((Price % 3) == 0)
       {
@@ -25,9 +27,16 @@ namespace Bakery.Items
         dividedPrice = regularPrice / 3;
         totalPrice = regularPrice - dividedPrice;
       }
-      else 
+      else if((Price == 1) || (Price == 2))
       {
         totalPrice = Price * 5 ;
+      }
+      else if ((Price % 3) != 0)
+      {
+        remainder = Price % 3; //1
+        regularPrice = Price * 5; //20
+        remainderDiscount = remainder * 5; //5
+        totalPrice = regularPrice - remainderDiscount;
       }
       return totalPrice;
     }
