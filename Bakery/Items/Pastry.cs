@@ -15,7 +15,28 @@ namespace Bakery.Items
 
     public int GetPrice()
     {
-      return Price * 2;
+      switch (Price)
+      {
+        case 1:
+          Price = 2;
+          break;
+        case 2:
+          Price = 3;
+          break;
+        case 3:
+          Price = 5;
+          break;
+        case 4:
+          Price = 7;
+          break;
+        case 5:
+          Price = 9;
+          break;
+        case 6:
+          Price = 10;
+          break;
+      }
+      return Price;
     }
   }
 }
