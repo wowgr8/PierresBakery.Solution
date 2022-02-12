@@ -22,5 +22,13 @@ namespace Bakery.Tests
       Pastry sweetPastry = new Pastry(sampleQuantity);
       Assert.AreEqual(sweetPastry.Quantity, 1);
     }
+
+    [TestMethod]
+    public void GetPrice_GetPastryPrice_2()
+    {
+      int sampleQuantity = 1;
+      Pastry sweetPastry = new Pastry(sampleQuantity);
+      Assert.AreEqual(sweetPastry.GetPrice(), 2);
+    }
   }
 }
