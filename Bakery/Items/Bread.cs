@@ -4,13 +4,11 @@ namespace Bakery.Items
 {
   public class Bread
   {
-    public int Price {get; set;} 
     public int Quantity {get; set;}
 
     public Bread(int breadQuantity) 
     {
       Quantity = breadQuantity;
-      Price = Quantity;
     }
 
     public int GetPrice()
@@ -21,20 +19,20 @@ namespace Bakery.Items
       int remainder = 0;
       int remainderDiscount = 0;
 
-      if((Price % 3) == 0)
+      if((Quantity % 3) == 0)
       {
-        regularPrice = Price * 5;
+        regularPrice = Quantity * 5;
         dividedPrice = regularPrice / 3;
         totalPrice = regularPrice - dividedPrice;
       }
-      else if((Price == 1) || (Price == 2))
+      else if((Quantity == 1) || (Quantity == 2))
       {
-        totalPrice = Price * 5 ;
+        totalPrice = Quantity * 5 ;
       }
       else 
       {
-        remainder = Price % 3;
-        regularPrice = Price * 5;
+        remainder = Quantity % 3;
+        regularPrice = Quantity * 5;
         remainderDiscount = remainder * 5;
         totalPrice = regularPrice - remainderDiscount;
       }
