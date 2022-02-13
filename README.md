@@ -6,6 +6,8 @@
 
 #### _Pierre's Bakery Takes an order of bread and pastries the user orders and returns a price factoring in the discounts that the Bakery is currently offering._
 
+![](https://github.com/wowgr8/gifs-for-readmes/blob/main/pierres-bakery-gif/pierres-bakery-demo.gif)
+
 #### Discounts
 _Pierre's Bakery offers the following discounts: 
 * Bread: Buy 2, get 1 free (every 3rd loaf of bread is free.). A single loaf costs $5, two loaves costs $10, and three loaves cost $10.
