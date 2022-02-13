@@ -4,7 +4,7 @@
 
 ### _February 12, 2022_
 
-#### _Pierre's Bakery Takes an order of bread and pastries the user orders and returns a price factoring in the discounts that the Bakery is currently offering._
+#### _Pierre's Bakery Takes an order of bread and pastries and returns a price factoring in the discounts that the Bakery is currently offering._
 
 ![](https://github.com/wowgr8/gifs-for-readmes/blob/main/pierres-bakery-gif/pierres-bakery-demo.gif)
 
