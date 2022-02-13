@@ -31,7 +31,7 @@ namespace Bakery.Items
       {
         totalPrice = Price * 5 ;
       }
-      else if(((Price % 3) != 0)|| (Price != 1) || (Price != 2))
+      else 
       {
         remainder = Price % 3;
         regularPrice = Price * 5;
