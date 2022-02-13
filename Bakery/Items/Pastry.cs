@@ -5,38 +5,37 @@ namespace Bakery.Items
   public class Pastry
   {
     public int Quantity {get; set;}
-    public int Price {get; set;}
 
     public Pastry(int pastryQuantity)
     {
       Quantity = pastryQuantity;
-      Price = Quantity;
     }
 
     public int GetPrice()
     {
-      switch (Price)
+      int price = Quantity;
+      switch (price)
       {
         case 1:
-          Price = 2;
+          price = 2;
           break;
         case 2:
-          Price = 3;
+          price = 3;
           break;
         case 3:
-          Price = 5;
+          price = 5;
           break;
         case 4:
-          Price = 7;
+          price = 7;
           break;
         case 5:
-          Price = 9;
+          price = 9;
           break;
         case 6:
-          Price = 10;
+          price = 10;
           break;
       }
-      return Price;
+      return price;
     }
   }
 }
