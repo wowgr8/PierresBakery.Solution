@@ -2,18 +2,18 @@ using System;
 
 namespace Bakery.Items
 {
-  public class Bread //This is a class
+  public class Bread
   {
-    public int Price {get; set;} //This is a field
+    public int Price {get; set;} 
     public int Quantity {get; set;}
 
-    public Bread(int breadQuantity) //This is a constructor
+    public Bread(int breadQuantity) 
     {
       Quantity = breadQuantity;
       Price = Quantity;
     }
 
-    public int GetPrice() // This is a method
+    public int GetPrice()
     {
       int regularPrice = 0;
       int dividedPrice = 0;
@@ -31,11 +31,11 @@ namespace Bakery.Items
       {
         totalPrice = Price * 5 ;
       }
-      else if ((Price % 3) != 0)
+      else if(((Price % 3) != 0)|| (Price != 1) || (Price != 2))
       {
-        remainder = Price % 3; //1
-        regularPrice = Price * 5; //20
-        remainderDiscount = remainder * 5; //5
+        remainder = Price % 3;
+        regularPrice = Price * 5;
+        remainderDiscount = remainder * 5;
         totalPrice = regularPrice - remainderDiscount;
       }
       return totalPrice;
